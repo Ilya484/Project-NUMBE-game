@@ -26,7 +26,7 @@ def lobby():
 def monolog():
     print('Чтобы пропустить кадсцену нажмите клавишу С. Иначе, жмите ENTER :', end='')
     skip = input().lower()
-    if skip == 'cс':
+    if skip in 'cс':
         lobby()
     elif skip == '':
         print('Итак, ' + con.name + ', ты попал в игру "Угадай число"...')
